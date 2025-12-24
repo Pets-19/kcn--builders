@@ -13,8 +13,7 @@ const Hero = () => {
           alt="Luxury eco-villa nestled in Wayanad's lush tea plantations at sunrise"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-hero" />
-        <div className="absolute inset-0 bg-gradient-to-t from-forest/80 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
       </div>
 
       {/* Floating Elements */}
