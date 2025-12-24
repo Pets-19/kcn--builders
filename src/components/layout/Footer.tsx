@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import { 
   Facebook, 
   Twitter, 
@@ -11,9 +12,23 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useToast } from '@/hooks/use-toast';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const { toast } = useToast();
+  const [email, setEmail] = useState('');
+
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email) {
+      toast({
+        title: 'Successfully Subscribed!',
+        description: 'Thank you for subscribing to our newsletter.',
+      });
+      setEmail('');
+    }
+  };
 
   const quickLinks = [
     { name: 'About Us', path: '/about' },
@@ -59,16 +74,19 @@ const Footer = () => {
                 Subscribe to receive updates on new projects, sustainability initiatives, and exclusive offers.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
+            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
               <input
                 type="email"
                 placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
                 className="px-5 py-3 rounded-lg bg-primary-foreground/10 border border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus:outline-none focus:border-gold w-full sm:w-72"
               />
-              <Button variant="hero" size="lg">
+              <Button variant="hero" size="lg" type="submit">
                 Subscribe <ArrowRight className="w-4 h-4" />
               </Button>
-            </div>
+            </form>
           </div>
         </div>
       </div>

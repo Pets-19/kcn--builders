@@ -14,6 +14,13 @@ const Contact = () => {
     setFormData({ name: '', email: '', phone: '', interest: '', message: '' });
   };
 
+  const handleApply = (role: string) => {
+    toast({
+      title: 'Application Received!',
+      description: `Thank you for applying for ${role}. We'll review your application and get back to you soon.`,
+    });
+  };
+
   return (
     <Layout>
       <section className="pt-32 pb-12 bg-muted">
@@ -75,7 +82,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div id="careers" className="bg-forest rounded-2xl p-8 text-primary-foreground">
+              <div id="careers" className="bg-forest r onClick={() => handleApply(role)}ounded-2xl p-8 text-primary-foreground">
                 <h3 className="text-xl font-serif font-bold mb-4">Join Our Team</h3>
                 <p className="text-primary-foreground/80 mb-6">We're always looking for passionate individuals who share our vision for sustainable development.</p>
                 <div className="space-y-3">

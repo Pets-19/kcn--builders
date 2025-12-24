@@ -44,26 +44,28 @@ const Projects = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filtered.map(project => (
-              <article key={project.id} className="bg-card rounded-2xl overflow-hidden shadow-elegant hover:shadow-lg transition-all hover:-translate-y-2 group">
-                <div className="aspect-[4/3] relative overflow-hidden">
-                  <img src={project.image} alt={project.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                  <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-gold text-foreground">{project.status}</span>
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-2 text-muted-foreground text-sm mb-2">
-                    <MapPin className="w-4 h-4" />{project.location} • {project.type}
+              <Link to={`/projects/${project.id}`} key={project.id}>
+                <article className="bg-card rounded-2xl overflow-hidden shadow-elegant hover:shadow-lg transition-all hover:-translate-y-2 group cursor-pointer">
+                  <div className="aspect-[4/3] relative overflow-hidden">
+                    <img src={project.image} alt={project.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-gold text-foreground">{project.status}</span>
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-foreground mb-3 group-hover:text-primary transition-colors">{project.name}</h3>
-                  <div className="flex gap-4 text-sm text-muted-foreground mb-4">
-                    <span className="flex items-center gap-1"><Bed className="w-4 h-4" />{project.bedrooms}</span>
-                    <span className="flex items-center gap-1"><Maximize className="w-4 h-4" />{project.area} sqft</span>
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 text-muted-foreground text-sm mb-2">
+                      <MapPin className="w-4 h-4" />{project.location} • {project.type}
+                    </div>
+                    <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">{project.name}</h3>
+                    <div className="flex gap-4 text-sm text-muted-foreground mb-4">
+                      <span className="flex items-center gap-1"><Bed className="w-4 h-4" />{project.bedrooms}</span>
+                      <span className="flex items-center gap-1"><Maximize className="w-4 h-4" />{project.area} sqft</span>
+                    </div>
+                    <div className="pt-4 border-t border-border flex justify-between items-center">
+                      <span className="font-bold text-foreground">{project.price}</span>
+                      <ArrowRight className="w-5 h-5 text-primary group-hover:translate-x-2 transition-transform" />
+                    </div>
                   </div>
-                  <div className="pt-4 border-t border-border flex justify-between items-center">
-                    <span className="font-bold text-foreground">{project.price}</span>
-                    <ArrowRight className="w-5 h-5 text-primary group-hover:translate-x-2 transition-transform" />
-                  </div>
-                </div>
-              </article>
+                </article>
+              </Link>
             ))}
           </div>
         </div>
