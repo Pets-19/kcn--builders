@@ -63,7 +63,7 @@ const About = () => {
     { year: '2009', title: 'Founded in Wayanad', description: 'GreenVista begins with a vision for sustainable development' },
     { year: '2012', title: 'First LEED Certification', description: 'Became one of Kerala\'s first LEED-certified developers' },
     { year: '2015', title: 'Township Launch', description: 'Green Meadows Township breaks ground' },
-    { year: '2018', title: 'Tech Integration', description: 'Launched VR tours and smart home platform' },
+    { year: '2018', title: 'Tech Integration', description: 'Launched smart home platform and digital services' },
     { year: '2021', title: '50th Project', description: 'Celebrated delivering 50 successful projects' },
     { year: '2024', title: 'National Expansion', description: 'Entered Bangalore and Kochi markets' },
     { year: '2025', title: 'Middle East Entry', description: 'Partnership for Dubai developments' },

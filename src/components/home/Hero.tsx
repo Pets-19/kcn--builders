@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Play, Leaf, Building2, Cpu, Smartphone } from 'lucide-react';
+import { ArrowRight, Leaf, Building2, Cpu, Smartphone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-wayanad.jpg';
 
@@ -48,9 +48,10 @@ const Hero = () => {
                 Explore Projects <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
-            <Button variant="hero-outline" size="xl" className="group">
-              <Play className="w-5 h-5 group-hover:text-gold transition-colors" />
-              Watch VR Tour
+            <Button variant="hero-outline" size="xl" asChild>
+              <Link to="/contact">
+                Contact Us <ArrowRight className="w-5 h-5" />
+              </Link>
             </Button>
           </div>
 
@@ -71,15 +72,6 @@ const Hero = () => {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator - Hidden on small screens */}
-      <div className="hidden lg:block absolute bottom-28 left-1/2 -translate-x-1/2 z-10 animate-pulse-slow">
-        <div className="flex flex-col items-center gap-2 text-primary-foreground/60">
-          <div className="w-6 h-10 rounded-full border-2 border-primary-foreground/30 flex items-start justify-center p-2">
-            <div className="w-1 h-2 rounded-full bg-gold animate-bounce" />
           </div>
         </div>
       </div>

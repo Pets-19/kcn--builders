@@ -45,8 +45,7 @@ const Contact = () => {
                 <input type="tel" placeholder="Phone Number" value={formData.phone} onChange={e => setFormData({...formData, phone: e.target.value})} className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:border-primary focus:ring-1 focus:ring-primary outline-none transition" />
                 <select value={formData.interest} onChange={e => setFormData({...formData, interest: e.target.value})} className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:border-primary outline-none">
                   <option value="">I'm interested in...</option>
-                  <option value="vr-tour">Schedule VR Tour</option>
-                  <option value="site-visit">Site Visit</option>
+                  <option value="site-visit">Schedule Site Visit</option>
                   <option value="investment">Investment Inquiry</option>
                   <option value="careers">Career Opportunities</option>
                   <option value="other">Other</option>

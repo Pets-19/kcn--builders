@@ -74,7 +74,7 @@ const Expansion = () => {
   const timeline = [
     { year: '2009-2015', milestone: 'Wayanad Establishment', description: 'Founded in Wayanad with focus on sustainable luxury villas' },
     { year: '2016-2020', milestone: 'Kerala Expansion', description: 'Expanded across Kerala with townships and integrated communities' },
-    { year: '2021-2023', milestone: 'Tech Integration', description: 'Pioneered VR tours, smart homes, and green certifications' },
+    { year: '2021-2023', milestone: 'Tech Integration', description: 'Pioneered smart homes and green certifications' },
     { year: '2024', milestone: 'Pan-India Growth', description: 'Entered Bangalore and Kochi markets with urban projects' },
     { year: '2025-2026', milestone: 'South India Consolidation', description: 'Mysore, Calicut, and more Karnataka cities' },
     { year: '2027+', milestone: 'International Expansion', description: 'Middle East entry with Dubai and Abu Dhabi partnerships' },

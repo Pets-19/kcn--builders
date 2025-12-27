@@ -30,7 +30,7 @@ const Privacy = () => {
           <ul>
             <li>Respond to your inquiries and provide customer service</li>
             <li>Send you information about our projects and services</li>
-            <li>Schedule property visits and VR tours</li>
+            <li>Schedule property visits</li>
             <li>Improve our website and services</li>
             <li>Comply with legal obligations</li>
           </ul>

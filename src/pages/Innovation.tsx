@@ -43,22 +43,22 @@ const Innovation = () => {
     },
   ];
 
-  const vrFeatures = [
+  const digitalFeatures = [
     {
-      title: '360° Virtual Tours',
-      description: 'Experience your future home from anywhere in the world with immersive VR walkthroughs.'
-    },
-    {
-      title: 'AR Property Visualization',
-      description: 'Use augmented reality to visualize properties on-site and customize finishes in real-time.'
+      title: 'Customer Portal',
+      description: 'Track construction progress, make payments, and communicate with our team through a unified platform.'
     },
     {
       title: 'Digital Twin Technology',
       description: 'Every project has a digital twin for monitoring performance and optimizing operations.'
     },
     {
-      title: 'Customer Portal',
-      description: 'Track construction progress, make payments, and communicate with our team through a unified platform.'
+      title: 'Smart Home Integration',
+      description: 'Control lighting, climate, security, and appliances from your smartphone anywhere in the world.'
+    },
+    {
+      title: 'Online Booking System',
+      description: 'Browse available units, compare floor plans, and book your dream home online.'
     },
   ];
 
@@ -134,7 +134,7 @@ const Innovation = () => {
         </div>
       </section>
 
-      {/* VR & Digital Experience */}
+      {/* Digital Experience */}
       <section className="py-24 bg-forest text-primary-foreground">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -143,15 +143,15 @@ const Innovation = () => {
                 Digital Experience
               </span>
               <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                Experience Before You Buy
+                Smart Living Made Easy
               </h2>
               <p className="text-primary-foreground/80 text-lg mb-8">
-                Our advanced VR and AR technologies let you explore and customize your future home 
-                before construction even begins. Make informed decisions with confidence.
+                Our digital tools and smart home technologies let you manage and experience your home 
+                like never before. Stay connected and in control at all times.
               </p>
               
               <div className="space-y-6">
-                {vrFeatures.map((feature, index) => (
+                {digitalFeatures.map((feature, index) => (
                   <div key={index} className="flex gap-4">
                     <div className="w-2 h-2 rounded-full bg-gold mt-2 flex-shrink-0" />
                     <div>
@@ -166,7 +166,7 @@ const Innovation = () => {
             <div className="relative h-[500px] rounded-2xl overflow-hidden">
               <img 
                 src={greenBuildingImg} 
-                alt="Virtual reality property tour" 
+                alt="Smart home technology" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-forest/60 to-transparent" />

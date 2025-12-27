@@ -56,29 +56,19 @@ const Navbar = () => {
         <nav className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className={cn(
-              "w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-300",
-              isScrolled || !isHomePage ? "bg-primary" : "bg-primary-foreground/20 backdrop-blur-sm"
+            <img 
+              src="/kcn.png" 
+              alt="KCN Logo" 
+              className="h-12 w-auto"
+            />
+            <span className={cn(
+              "text-2xl font-bold tracking-tight transition-colors duration-300",
+              isScrolled || !isHomePage
+                ? "text-foreground"
+                : "text-primary-foreground"
             )}>
-              <span className={cn(
-                "text-xl font-serif font-bold",
-                isScrolled || !isHomePage ? "text-primary-foreground" : "text-primary-foreground"
-              )}>G</span>
-            </div>
-            <div className="flex flex-col">
-              <span className={cn(
-                "text-lg font-serif font-bold leading-tight transition-colors duration-300",
-                isScrolled || !isHomePage ? "text-foreground" : "text-primary-foreground"
-              )}>
-                GreenVista
-              </span>
-              <span className={cn(
-                "text-xs tracking-widest uppercase transition-colors duration-300",
-                isScrolled || !isHomePage ? "text-muted-foreground" : "text-primary-foreground/70"
-              )}>
-                Developers
-              </span>
-            </div>
+              KCN
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -130,7 +120,7 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Button variant={isScrolled || !isHomePage ? "hero" : "hero-outline"} size="default" asChild>
-              <Link to="/contact">Schedule VR Tour</Link>
+              <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
 
@@ -169,7 +159,7 @@ const Navbar = () => {
               ))}
               <div className="pt-4">
                 <Button variant="hero" size="lg" className="w-full" asChild>
-                  <Link to="/contact">Schedule VR Tour</Link>
+                  <Link to="/contact">Contact Us</Link>
                 </Button>
               </div>
             </div>
