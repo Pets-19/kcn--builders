@@ -14,7 +14,7 @@ const Privacy = () => {
         <div className="container mx-auto px-4 lg:px-8 max-w-4xl prose prose-lg">
           <h2>Introduction</h2>
           <p>
-            GreenVista Developers ("we," "our," or "us") respects your privacy and is committed to protecting your personal data. This privacy policy explains how we collect, use, and safeguard your information when you visit our website or engage with our services.
+            KCN Builders ("we," "our," or "us") respects your privacy and is committed to protecting your personal data. This privacy policy explains how we collect, use, and safeguard your information when you visit our website or engage with our services.
           </p>
 
           <h2>Information We Collect</h2>
@@ -52,8 +52,8 @@ const Privacy = () => {
           <h2>Contact Us</h2>
           <p>
             If you have questions about this Privacy Policy, please contact us at:<br />
-            Email: privacy@greenvistadevelopers.com<br />
-            Phone: +91 4936 123 456
+            Email: privacy@kcnbuilders.com<br />
+            Phone: +91 97477 70369
           </p>
         </div>
       </section>

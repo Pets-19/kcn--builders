@@ -240,8 +240,8 @@ const ProjectDetail = () => {
                 <div className="bg-primary/10 rounded-2xl p-6">
                   <h3 className="font-bold mb-4">Need Help?</h3>
                   <div className="space-y-2 text-sm">
-                    <p>📞 +91 4936 123 456</p>
-                    <p>📧 info@greenvistadevelopers.com</p>
+                    <p>📞 +91 97477 70369</p>
+                    <p>📧 info@kcnbuilders.com</p>
                   </div>
                 </div>
               </div>

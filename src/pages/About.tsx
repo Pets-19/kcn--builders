@@ -43,7 +43,7 @@ const About = () => {
       name: 'Arun Krishnan',
       role: 'Founder & CEO',
       image: team1,
-      bio: 'With 25 years in real estate development, Arun founded GreenVista with a vision to transform how India builds and lives.',
+      bio: 'With 25 years in real estate development, Arun founded KCN with a vision to transform how India builds and lives.',
     },
     {
       name: 'Lakshmi Nair',
@@ -55,12 +55,12 @@ const About = () => {
       name: 'Vikram Iyer',
       role: 'Head of Sustainability',
       image: team3,
-      bio: 'Vikram ensures every GreenVista project meets the highest standards of environmental performance.',
+      bio: 'Vikram ensures every KCN project meets the highest standards of environmental performance.',
     },
   ];
 
   const milestones = [
-    { year: '2009', title: 'Founded in Wayanad', description: 'GreenVista begins with a vision for sustainable development' },
+    { year: '2009', title: 'Founded in Wayanad', description: 'KCN begins with a vision for sustainable development' },
     { year: '2012', title: 'First LEED Certification', description: 'Became one of Kerala\'s first LEED-certified developers' },
     { year: '2015', title: 'Township Launch', description: 'Green Meadows Township breaks ground' },
     { year: '2018', title: 'Tech Integration', description: 'Launched smart home platform and digital services' },
@@ -90,7 +90,7 @@ const About = () => {
               <span className="text-primary">Growing Globally</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              For over 15 years, GreenVista Developers has been crafting sustainable living spaces 
+              For over 15 years, KCN Builders has been crafting sustainable living spaces 
               that honor Kerala's natural heritage while embracing innovation and modern luxury.
             </p>
           </div>

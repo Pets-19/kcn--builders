@@ -13,7 +13,7 @@ const Expansion = () => {
       established: '2009',
       highlights: ['Luxury Villas', 'Eco-Townships', 'Premium Resorts'],
       icon: '🏔️',
-      description: 'Our roots in Kerala\'s pristine hills. The birthplace of GreenVista\'s vision for sustainable luxury living.'
+      description: 'Our roots in Kerala\'s pristine hills. The birthplace of KCN\'s vision for sustainable luxury living.'
     },
     {
       city: 'Bangalore',
@@ -260,7 +260,7 @@ const Expansion = () => {
             Partner with Us in Our Expansion
           </h2>
           <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto mb-8">
-            Looking to invest, partner, or bring GreenVista to your city? 
+            Looking to invest, partner, or bring KCN to your city? 
             Let's discuss opportunities for sustainable development together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

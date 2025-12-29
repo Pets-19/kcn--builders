@@ -14,7 +14,7 @@ const Terms = () => {
         <div className="container mx-auto px-4 lg:px-8 max-w-4xl prose prose-lg">
           <h2>Agreement to Terms</h2>
           <p>
-            By accessing or using the GreenVista Developers website and services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
+            By accessing or using the KCN Builders website and services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
           </p>
 
           <h2>Use of Services</h2>
@@ -22,7 +22,7 @@ const Terms = () => {
           <ul>
             <li>Individuals seeking residential or commercial properties</li>
             <li>Investors interested in real estate opportunities</li>
-            <li>Partners and vendors working with GreenVista</li>
+            <li>Partners and vendors working with KCN</li>
           </ul>
 
           <h2>Property Information</h2>
@@ -37,12 +37,12 @@ const Terms = () => {
 
           <h2>Intellectual Property</h2>
           <p>
-            All content on this website, including text, images, logos, and designs, is the property of GreenVista Developers and is protected by copyright laws. Unauthorized use is prohibited.
+            All content on this website, including text, images, logos, and designs, is the property of KCN Builders and is protected by copyright laws. Unauthorized use is prohibited.
           </p>
 
           <h2>Limitation of Liability</h2>
           <p>
-            GreenVista Developers shall not be liable for any indirect, incidental, or consequential damages arising from the use of our website or services.
+            KCN Builders shall not be liable for any indirect, incidental, or consequential damages arising from the use of our website or services.
           </p>
 
           <h2>Changes to Terms</h2>
@@ -53,8 +53,8 @@ const Terms = () => {
           <h2>Contact Information</h2>
           <p>
             For questions regarding these Terms of Service, contact us at:<br />
-            Email: legal@greenvistadevelopers.com<br />
-            Phone: +91 4936 123 456
+            Email: legal@kcnbuilders.com<br />
+            Phone: +91 97477 70369
           </p>
         </div>
       </section>

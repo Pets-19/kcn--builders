@@ -2,8 +2,6 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Cpu, Leaf, Building2, Smartphone, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import innovationImg from '@/assets/innovation.jpg';
-import greenBuildingImg from '@/assets/green-building.jpg';
 
 const trends = [
   {
@@ -13,7 +11,7 @@ const trends = [
     subtitle: 'Building Smarter',
     description: 'We leverage AI-driven design, BIM software, and modular construction techniques to deliver projects faster, with precision and reduced waste.',
     features: ['AI-Optimized Layouts', 'Modular Construction', 'BIM Integration', '3D Visualization'],
-    image: innovationImg,
+    image: '/images/Innovation & Technology.jpg',
     link: '/innovation#technology',
   },
   {
@@ -21,9 +19,9 @@ const trends = [
     icon: Leaf,
     title: 'Green Building',
     subtitle: 'Sustainable by Design',
-    description: 'Every GreenVista project is designed with the planet in mind. From LEED certifications to solar integration and rainwater harvesting, we set the standard for eco-conscious development.',
+    description: 'Every KCN project is designed with the planet in mind. From LEED certifications to solar integration and rainwater harvesting, we set the standard for eco-conscious development.',
     features: ['LEED Certified', 'Solar Integration', 'Rainwater Harvesting', 'Zero-Waste Goals'],
-    image: greenBuildingImg,
+    image: '/images/Green Building.jpg',
     link: '/innovation#green',
   },
   {
@@ -33,7 +31,7 @@ const trends = [
     subtitle: 'Complete Communities',
     description: 'Our townships blend residential, retail, and recreational spaces into walkable, self-sufficient communities that reduce commutes and enhance quality of life.',
     features: ['Mixed-Use Design', 'Walkable Communities', 'Green Spaces', 'Retail Integration'],
-    image: innovationImg,
+    image: '/images/Integrated Townships.jpg',
     link: '/innovation#townships',
   },
   {
@@ -43,7 +41,7 @@ const trends = [
     subtitle: 'Your Home, Your Way',
     description: 'Experience your future home before it\'s built with VR tours, customize finishes through our app, and enjoy smart home integration from day one.',
     features: ['360° VR Tours', 'Smart Home Apps', 'AR Previews', 'Personalized Configurators'],
-    image: greenBuildingImg,
+    image: '/images/Customer-Centric Tech.jpg',
     link: '/innovation#tech',
   },
 ];

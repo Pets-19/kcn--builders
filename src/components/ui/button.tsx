@@ -9,18 +9,18 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-forest-light shadow-md hover:shadow-lg",
+        default: "bg-primary text-white hover:bg-forest-light shadow-md hover:shadow-lg",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-primary-foreground",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-ocean-light shadow-md",
+        outline: "border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-white",
+        secondary: "bg-secondary text-white hover:bg-ocean-light shadow-md",
         ghost: "hover:bg-muted hover:text-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        // Custom GreenVista variants
-        hero: "bg-gold text-foreground font-bold hover:bg-gold-dark shadow-gold hover:shadow-lg transform hover:scale-105",
+        // Custom KCN variants
+        hero: "bg-gold text-white font-bold hover:bg-gold-dark shadow-gold hover:shadow-lg transform hover:scale-105",
         "hero-outline": "border-2 border-primary-foreground/80 text-primary-foreground bg-transparent hover:bg-primary-foreground/10 backdrop-blur-sm",
-        accent: "bg-accent text-accent-foreground hover:bg-gold-dark shadow-md hover:shadow-lg",
-        ocean: "bg-ocean text-secondary-foreground hover:bg-ocean-dark shadow-md hover:shadow-lg",
-        forest: "bg-forest text-primary-foreground hover:bg-forest-dark shadow-forest hover:shadow-lg",
+        accent: "bg-accent text-white hover:bg-gold-dark shadow-md hover:shadow-lg",
+        ocean: "bg-ocean text-white hover:bg-ocean-dark shadow-md hover:shadow-lg",
+        forest: "bg-forest text-white hover:bg-forest-dark shadow-forest hover:shadow-lg",
       },
       size: {
         default: "h-11 px-6 py-2",

@@ -68,7 +68,7 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-2xl font-serif font-bold mb-2">
-                Stay Updated with GreenVista
+                Stay Updated with KCN
               </h3>
               <p className="text-primary-foreground/70">
                 Subscribe to receive updates on new projects, sustainability initiatives, and exclusive offers.
@@ -182,9 +182,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="tel:+914936123456" className="flex items-center gap-3 text-primary-foreground/70 hover:text-gold transition-colors">
+                <a href="tel:+919747770369" className="flex items-center gap-3 text-primary-foreground/70 hover:text-gold transition-colors">
                   <Phone className="w-5 h-5 shrink-0" />
-                  <span>+91 4936 123 456</span>
+                  <span>+91 97477 70369</span>
                 </a>
               </li>
               <li>

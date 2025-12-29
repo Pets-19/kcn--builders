@@ -74,8 +74,8 @@ const Cookies = () => {
           <h2>Contact Us</h2>
           <p>
             If you have questions about our use of cookies, please contact us at:<br />
-            Email: privacy@greenvistadevelopers.com<br />
-            Phone: +91 4936 123 456
+            Email: privacy@kcnbuilders.com<br />
+            Phone: +91 97477 70369
           </p>
         </div>
       </section>

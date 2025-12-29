@@ -3,24 +3,21 @@ import { Link } from 'react-router-dom';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { MapPin, Bed, Bath, Maximize, ArrowRight, Filter } from 'lucide-react';
-import project1 from '@/assets/project-1.jpg';
-import project2 from '@/assets/project-2.jpg';
-import project3 from '@/assets/project-3.jpg';
 
 const allProjects = [
-  { id: 1, name: 'Mist Valley Residences', location: 'Wayanad', type: 'Luxury Villas', image: project1, bedrooms: '3-5', area: '2500-4500', status: 'Ready to Move', price: '₹2.5 Cr onwards' },
-  { id: 2, name: 'Green Meadows Township', location: 'Wayanad', type: 'Township', image: project2, bedrooms: '2-4', area: '1200-3000', status: 'Under Construction', price: '₹85 L onwards' },
-  { id: 3, name: 'Horizon Hills', location: 'Wayanad', type: 'Premium Villas', image: project3, bedrooms: '4-6', area: '4000-6000', status: 'New Launch', price: '₹4.5 Cr onwards' },
-  { id: 4, name: 'Tech Park Residences', location: 'Bangalore', type: 'Apartments', image: project1, bedrooms: '2-3', area: '1100-1800', status: 'Coming Soon', price: '₹1.2 Cr onwards' },
-  { id: 5, name: 'Marina Heights', location: 'Kochi', type: 'Luxury Apartments', image: project2, bedrooms: '3-4', area: '1800-2500', status: 'Pre-Launch', price: '₹1.8 Cr onwards' },
-  { id: 6, name: 'Desert Oasis', location: 'Dubai', type: 'Premium Villas', image: project3, bedrooms: '4-5', area: '3500-5000', status: 'Pipeline', price: 'AED 5M onwards' },
+  { id: 1, name: 'Mist Valley Residences', location: 'Meppadi, Wayanad', type: 'Luxury Villas', image: '/project-images/1.png', bedrooms: '3-5', area: '2500-4500', status: 'Ready to Move', price: '₹2.5 Cr onwards' },
+  { id: 2, name: 'Green Meadows Township', location: 'Kalpetta, Wayanad', type: 'Township', image: '/project-images/2.png', bedrooms: '2-4', area: '1200-3000', status: 'Under Construction', price: '₹85 L onwards' },
+  { id: 3, name: 'Horizon Hills', location: 'Vythiri, Wayanad', type: 'Premium Villas', image: '/project-images/3.png', bedrooms: '4-6', area: '4000-6000', status: 'New Launch', price: '₹4.5 Cr onwards' },
+  { id: 4, name: 'Tech Park Residences', location: 'Whitefield, Bangalore', type: 'Apartments', image: '/project-images/1.png', bedrooms: '2-3', area: '1100-1800', status: 'Coming Soon', price: '₹1.2 Cr onwards' },
+  { id: 5, name: 'Skyline Heights', location: 'Electronic City, Bangalore', type: 'Luxury Apartments', image: '/project-images/2.png', bedrooms: '3-4', area: '1800-2500', status: 'Pre-Launch', price: '₹1.8 Cr onwards' },
+  { id: 6, name: 'Urban Oasis', location: 'Koramangala, Bangalore', type: 'Premium Apartments', image: '/project-images/3.png', bedrooms: '4-5', area: '3500-5000', status: 'New Launch', price: '₹3.5 Cr onwards' },
 ];
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
-  const locations = ['all', 'Wayanad', 'Bangalore', 'Kochi', 'Dubai'];
+  const locations = ['all', 'Wayanad', 'Bangalore'];
   
-  const filtered = filter === 'all' ? allProjects : allProjects.filter(p => p.location === filter);
+  const filtered = filter === 'all' ? allProjects : allProjects.filter(p => p.location.includes(filter));
 
   return (
     <Layout>

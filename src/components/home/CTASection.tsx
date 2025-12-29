@@ -119,10 +119,10 @@ const CTASection = () => {
                   Or call us directly at
                 </p>
                 <a 
-                  href="tel:+914936123456" 
+                  href="tel:+919747770369" 
                   className="text-2xl font-serif font-bold text-primary hover:text-forest-light transition-colors"
                 >
-                  +91 4936 123 456
+                  +91 97477 70369
                 </a>
               </div>
             </div>

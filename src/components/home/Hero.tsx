@@ -1,18 +1,56 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Leaf, Building2, Cpu, Smartphone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import heroImage from '@/assets/hero-wayanad.jpg';
+import { useEffect, useRef } from 'react';
 
 const Hero = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    const section = sectionRef.current;
+
+    if (!video || !section) return;
+
+    // Intersection Observer to detect when hero section is in view
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Play video when hero section is in view
+            video.play().catch(err => console.log('Video play failed:', err));
+          } else {
+            // Pause video when hero section is out of view
+            video.pause();
+          }
+        });
+      },
+      { threshold: 0.5 } // Trigger when 50% of section is visible
+    );
+
+    observer.observe(section);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <section className="relative h-screen max-h-[900px] flex items-center overflow-hidden">
-      {/* Background Image */}
+    <section ref={sectionRef} className="relative h-screen max-h-[900px] flex items-center overflow-hidden">
+      {/* Background Video */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
-          alt="Luxury eco-villa nestled in Wayanad's lush tea plantations at sunrise"
+        <video 
+          ref={videoRef}
           className="w-full h-full object-cover"
-        />
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="/videos/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
       </div>
 

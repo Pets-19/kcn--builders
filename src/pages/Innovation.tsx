@@ -76,7 +76,7 @@ const Innovation = () => {
               <span className="text-primary">Cutting-Edge Technology</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              At GreenVista, we leverage the latest innovations in construction, sustainability, 
+              At KCN, we leverage the latest innovations in construction, sustainability, 
               and smart technology to create homes that are smarter, greener, and built for tomorrow.
             </p>
           </div>

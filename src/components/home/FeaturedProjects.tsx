@@ -1,17 +1,14 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, MapPin, Bed, Bath, Maximize } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import project1 from '@/assets/project-1.jpg';
-import project2 from '@/assets/project-2.jpg';
-import project3 from '@/assets/project-3.jpg';
 
 const projects = [
   {
     id: 1,
     name: 'Mist Valley Residences',
-    location: 'Wayanad, Kerala',
+    location: 'Meppadi, Wayanad',
     type: 'Luxury Villas',
-    image: project1,
+    image: '/project-images/1.png',
     bedrooms: '3-5',
     bathrooms: '3-4',
     area: '2500-4500 sq.ft',
@@ -22,9 +19,9 @@ const projects = [
   {
     id: 2,
     name: 'Green Meadows Township',
-    location: 'Wayanad, Kerala',
+    location: 'Kalpetta, Wayanad',
     type: 'Integrated Township',
-    image: project2,
+    image: '/project-images/2.png',
     bedrooms: '2-4',
     bathrooms: '2-3',
     area: '1200-3000 sq.ft',
@@ -35,9 +32,9 @@ const projects = [
   {
     id: 3,
     name: 'Horizon Hills',
-    location: 'Wayanad, Kerala',
+    location: 'Vythiri, Wayanad',
     type: 'Premium Villas',
-    image: project3,
+    image: '/project-images/3.png',
     bedrooms: '4-6',
     bathrooms: '4-5',
     area: '4000-6000 sq.ft',
