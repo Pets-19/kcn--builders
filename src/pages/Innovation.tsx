@@ -1,7 +1,5 @@
 import Layout from '@/components/layout/Layout';
 import { Cpu, Leaf, Building2, Smartphone, Zap, BrainCircuit } from 'lucide-react';
-import innovationImg from '@/assets/innovation.jpg';
-import greenBuildingImg from '@/assets/green-building.jpg';
 
 const Innovation = () => {
   const innovations = [
@@ -88,7 +86,7 @@ const Innovation = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="relative h-[60vh] rounded-2xl overflow-hidden">
             <img 
-              src={innovationImg} 
+              src="/images/Innovation & Technology.jpg" 
               alt="Innovation in sustainable architecture" 
               className="w-full h-full object-cover"
             />
@@ -165,7 +163,7 @@ const Innovation = () => {
 
             <div className="relative h-[500px] rounded-2xl overflow-hidden">
               <img 
-                src={greenBuildingImg} 
+                src="/images/Green Building.jpg" 
                 alt="Smart home technology" 
                 className="w-full h-full object-cover"
               />
