@@ -9,15 +9,17 @@ const CTASection = () => {
       title: 'VR Tour',
       description: 'Experience properties virtually',
       action: 'Schedule Now',
-      link: '/contact?type=vr-tour',
+      link: 'https://wa.me/919747770369?text=Hello%20KCN%20Builders%2C%20I%20would%20like%20to%20schedule%20a%20VR%20tour.',
       primary: true,
+      isExternal: true,
     },
     {
       icon: Calendar,
       title: 'Site Visit',
       description: 'Visit our projects in person',
       action: 'Book Visit',
-      link: '/contact?type=site-visit',
+      link: 'https://wa.me/919747770369?text=Hello%20KCN%20Builders%2C%20I%20would%20like%20to%20book%20a%20site%20visit.',
+      isExternal: true,
     },
     {
       icon: FileText,
@@ -31,7 +33,8 @@ const CTASection = () => {
       title: 'Callback',
       description: 'Request a call from our team',
       action: 'Get Called',
-      link: '/contact?type=callback',
+      link: 'https://wa.me/919747770369?text=Hello%20KCN%20Builders%2C%20I%20would%20like%20to%20request%20a%20callback.',
+      isExternal: true,
     },
   ];
 
@@ -70,9 +73,9 @@ const CTASection = () => {
               </div>
 
               <Button variant="hero" size="xl" asChild>
-                <Link to="/contact">
+                <a href="https://wa.me/919747770369?text=Hello%20KCN%20Builders%2C%20I'm%20interested%20in%20learning%20more%20about%20your%20projects." target="_blank" rel="noopener noreferrer">
                   Start Your Journey <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </Button>
             </div>
 
@@ -82,35 +85,42 @@ const CTASection = () => {
                 Quick Connect Options
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {ctaOptions.map((option) => (
-                  <Link
-                    key={option.title}
-                    to={option.link}
-                    className={`group p-6 rounded-xl border transition-all duration-300 hover:-translate-y-1 ${
-                      option.primary 
-                        ? 'bg-primary/5 border-primary hover:bg-primary hover:text-primary-foreground' 
-                        : 'bg-card border-border hover:border-primary hover:shadow-md'
-                    }`}
-                  >
-                    <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-colors ${
-                      option.primary 
-                        ? 'bg-primary text-primary-foreground group-hover:bg-primary-foreground group-hover:text-primary' 
-                        : 'bg-muted text-primary group-hover:bg-primary group-hover:text-primary-foreground'
-                    }`}>
-                      <option.icon className="w-5 h-5" />
-                    </div>
-                    <h4 className={`font-semibold mb-1 ${option.primary ? '' : 'text-foreground'} group-hover:text-inherit`}>
-                      {option.title}
-                    </h4>
-                    <p className={`text-sm mb-3 ${option.primary ? 'text-primary/70 group-hover:text-primary-foreground/70' : 'text-muted-foreground group-hover:text-inherit/70'}`}>
-                      {option.description}
-                    </p>
-                    <span className={`text-sm font-medium flex items-center gap-2 ${option.primary ? 'text-primary group-hover:text-primary-foreground' : 'text-primary'}`}>
-                      {option.action}
-                      <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
-                    </span>
-                  </Link>
-                ))}
+                {ctaOptions.map((option) => {
+                  const LinkComponent = option.isExternal ? 'a' : Link;
+                  const linkProps = option.isExternal 
+                    ? { href: option.link, target: "_blank", rel: "noopener noreferrer" } 
+                    : { to: option.link };
+                  
+                  return (
+                    <LinkComponent
+                      key={option.title}
+                      {...linkProps}
+                      className={`group p-6 rounded-xl border transition-all duration-300 hover:-translate-y-1 ${
+                        option.primary 
+                          ? 'bg-primary/5 border-primary hover:bg-primary hover:text-primary-foreground' 
+                          : 'bg-card border-border hover:border-primary hover:shadow-md'
+                      }`}
+                    >
+                      <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-colors ${
+                        option.primary 
+                          ? 'bg-primary text-primary-foreground group-hover:bg-primary-foreground group-hover:text-primary' 
+                          : 'bg-muted text-primary group-hover:bg-primary group-hover:text-primary-foreground'
+                      }`}>
+                        <option.icon className="w-5 h-5" />
+                      </div>
+                      <h4 className={`font-semibold mb-1 ${option.primary ? '' : 'text-foreground'} group-hover:text-inherit`}>
+                        {option.title}
+                      </h4>
+                      <p className={`text-sm mb-3 ${option.primary ? 'text-primary/70 group-hover:text-primary-foreground/70' : 'text-muted-foreground group-hover:text-inherit/70'}`}>
+                        {option.description}
+                      </p>
+                      <span className={`text-sm font-medium flex items-center gap-2 ${option.primary ? 'text-primary group-hover:text-primary-foreground' : 'text-primary'}`}>
+                        {option.action}
+                        <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                      </span>
+                    </LinkComponent>
+                  );
+                })}
               </div>
 
               {/* Contact Info */}

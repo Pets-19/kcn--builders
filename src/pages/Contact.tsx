@@ -10,14 +10,29 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast({ title: 'Message Sent!', description: 'Our team will contact you within 24 hours.' });
+    
+    // Format the message for WhatsApp
+    let whatsappMessage = `*New Contact Form Submission*%0A%0A`;
+    whatsappMessage += `*Name:* ${formData.name}%0A`;
+    whatsappMessage += `*Email:* ${formData.email}%0A`;
+    whatsappMessage += `*Phone:* ${formData.phone || 'Not provided'}%0A`;
+    whatsappMessage += `*Interest:* ${formData.interest || 'Not specified'}%0A`;
+    whatsappMessage += `*Message:* ${formData.message || 'No message'}%0A`;
+    
+    // Open WhatsApp with the formatted message
+    window.open(`https://wa.me/919747770369?text=${whatsappMessage}`, '_blank');
+    
+    toast({ title: 'Redirecting to WhatsApp!', description: 'Your message will be sent via WhatsApp.' });
     setFormData({ name: '', email: '', phone: '', interest: '', message: '' });
   };
 
   const handleApply = (role: string) => {
+    const whatsappMessage = `*Job Application*%0A%0A*Position:* ${role}%0A%0AI would like to apply for this position at KCN Builders.`;
+    window.open(`https://wa.me/919747770369?text=${whatsappMessage}`, '_blank');
+    
     toast({
-      title: 'Application Received!',
-      description: `Thank you for applying for ${role}. We'll review your application and get back to you soon.`,
+      title: 'Redirecting to WhatsApp!',
+      description: `Your application for ${role} will be sent via WhatsApp.`,
     });
   };
 
@@ -81,14 +96,14 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div id="careers" className="bg-forest r onClick={() => handleApply(role)}ounded-2xl p-8 text-primary-foreground">
+              <div id="careers" className="bg-forest rounded-2xl p-8 text-primary-foreground">
                 <h3 className="text-xl font-serif font-bold mb-4">Join Our Team</h3>
                 <p className="text-primary-foreground/80 mb-6">We're always looking for passionate individuals who share our vision for sustainable development.</p>
                 <div className="space-y-3">
                   {['Senior Architect', 'Sustainability Engineer', 'Sales Executive', 'Digital Marketing Manager'].map(role => (
                     <div key={role} className="flex justify-between items-center p-3 rounded-lg bg-primary-foreground/10">
                       <span>{role}</span>
-                      <Button variant="hero" size="sm">Apply</Button>
+                      <Button variant="hero" size="sm" onClick={() => handleApply(role)}>Apply</Button>
                     </div>
                   ))}
                 </div>

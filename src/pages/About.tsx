@@ -289,9 +289,9 @@ const About = () => {
               </Link>
             </Button>
             <Button variant="outline" size="lg" asChild>
-              <Link to="/contact#careers">
+              <a href="https://wa.me/919747770369?text=Hello%20KCN%20Builders%2C%20I'm%20interested%20in%20career%20opportunities%20with%20your%20team." target="_blank" rel="noopener noreferrer">
                 Join Our Team
-              </Link>
+              </a>
             </Button>
           </div>
         </div>

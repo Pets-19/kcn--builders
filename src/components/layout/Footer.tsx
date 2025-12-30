@@ -197,7 +197,7 @@ const Footer = () => {
 
             <div className="mt-8">
               <Button variant="hero" className="w-full" asChild>
-                <Link to="/contact">Get in Touch</Link>
+                <a href="https://wa.me/919747770369?text=Hello%20KCN%20Builders%2C%20I'd%20like%20to%20get%20in%20touch%20with%20your%20team." target="_blank" rel="noopener noreferrer">Get in Touch</a>
               </Button>
             </div>
           </div>

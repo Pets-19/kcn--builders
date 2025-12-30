@@ -120,7 +120,7 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Button variant={isScrolled || !isHomePage ? "hero" : "hero-outline"} size="default" asChild>
-              <Link to="/contact">Contact Us</Link>
+              <a href="https://wa.me/919747770369?text=Hello%20KCN%20Builders%2C%20I'm%20interested%20in%20learning%20more%20about%20your%20projects." target="_blank" rel="noopener noreferrer">Contact Us</a>
             </Button>
           </div>
 
@@ -159,7 +159,7 @@ const Navbar = () => {
               ))}
               <div className="pt-4">
                 <Button variant="hero" size="lg" className="w-full" asChild>
-                  <Link to="/contact">Contact Us</Link>
+                  <a href="https://wa.me/919747770369?text=Hello%20KCN%20Builders%2C%20I'm%20interested%20in%20learning%20more%20about%20your%20projects." target="_blank" rel="noopener noreferrer">Contact Us</a>
                 </Button>
               </div>
             </div>

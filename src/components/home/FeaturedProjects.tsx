@@ -175,7 +175,7 @@ const FeaturedProjects = () => {
             Our team can help you find the perfect property that matches your lifestyle and investment goals.
           </p>
           <Button variant="hero" size="lg" asChild>
-            <Link to="/contact">Schedule a Consultation</Link>
+            <a href="https://wa.me/919747770369?text=Hello%20KCN%20Builders%2C%20I%20would%20like%20to%20schedule%20a%20consultation." target="_blank" rel="noopener noreferrer">Schedule a Consultation</a>
           </Button>
         </div>
       </div>
