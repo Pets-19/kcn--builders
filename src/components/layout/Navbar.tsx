@@ -61,14 +61,6 @@ const Navbar = () => {
               alt="KCN Logo" 
               className="h-12 w-auto"
             />
-            <span className={cn(
-              "text-2xl font-bold tracking-tight transition-colors duration-300",
-              isScrolled || !isHomePage
-                ? "text-foreground"
-                : "text-primary-foreground"
-            )}>
-              KCN
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
