@@ -37,7 +37,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative h-screen max-h-[900px] flex items-center overflow-hidden">
+    <section ref={sectionRef} className="relative h-screen flex items-center overflow-hidden">
       {/* Background Video */}
       <div className="absolute inset-0 z-0">
         <video 
