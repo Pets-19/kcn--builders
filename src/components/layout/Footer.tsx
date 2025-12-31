@@ -98,7 +98,13 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-lg bg-gold flex items-center justify-center">
-                <span className="text-2xl font-serif font-bold text-foreground">K</span>
+                <span className="text-2xl font-serif font-bold text-foreground">
+                  <img 
+                    src="/K.png" 
+                    alt="KCN Logo" 
+                    className="h-12 w-auto"
+                  />
+                </span>
               </div>
               <div>
                 <span className="text-xl font-serif font-bold block">KCN</span>
