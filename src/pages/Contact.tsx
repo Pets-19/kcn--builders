@@ -80,7 +80,7 @@ const Contact = () => {
                   {[
                     { icon: MapPin, title: 'Head Office', text: 'KCN Tower, Sultan Bathery Road, Wayanad, Kerala 673592' },
                     { icon: Phone, title: 'Phone', text: '+91 97477 70369' },
-                    { icon: Mail, title: 'Email', text: 'info@kcnbuilders.com' },
+                    { icon: Mail, title: 'Email', text: 'builderskcn@gmail.com' },
                     { icon: Clock, title: 'Working Hours', text: 'Mon - Sat: 9:00 AM - 6:00 PM' },
                   ].map(item => (
                     <div key={item.title} className="flex gap-4">

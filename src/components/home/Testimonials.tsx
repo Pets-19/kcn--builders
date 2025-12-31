@@ -9,7 +9,7 @@ const testimonials = [
     location: 'Mist Valley Residences, Wayanad',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face',
     rating: 5,
-    text: 'Moving to GreenVista\'s Mist Valley was the best decision we made. The quality of construction, the attention to sustainability, and the serene environment have transformed our lives. Our energy bills are 40% lower than our previous home!',
+    text: 'Moving to KCN\'s Mist Valley was the best decision we made. The quality of construction, the attention to sustainability, and the serene environment have transformed our lives. Our energy bills are 40% lower than our previous home!',
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const testimonials = [
     location: 'Horizon Hills',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face',
     rating: 5,
-    text: 'After a hectic day at work, coming home to the tranquility of Horizon Hills is therapeutic. The infinity pool overlooking the mountains is my sanctuary. GreenVista truly understands luxury living.',
+    text: 'After a hectic day at work, coming home to the tranquility of Horizon Hills is therapeutic. The infinity pool overlooking the mountains is my sanctuary. KCN truly understands luxury living.',
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const testimonials = [
     location: 'Mist Valley Residences',
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face',
     rating: 5,
-    text: 'I was skeptical about buying property remotely, but the GreenVista app and their transparent process made it seamless. From booking to possession, every step was professional and hassle-free.',
+    text: 'I was skeptical about buying property remotely, but the KCN app and their transparent process made it seamless. From booking to possession, every step was professional and hassle-free.',
   },
 ];
 
@@ -63,7 +63,7 @@ const Testimonials = () => {
             Voices of Our Community
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Hear from families who have found their dream homes with GreenVista Developers.
+            Hear from families who have found their dream homes with KCN Builders.
           </p>
         </div>
 

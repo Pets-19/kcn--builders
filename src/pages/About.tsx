@@ -10,9 +10,6 @@ import {
   Award,
   Calendar
 } from 'lucide-react';
-import team1 from '@/assets/team-1.jpg';
-import team2 from '@/assets/team-2.jpg';
-import team3 from '@/assets/team-3.jpg';
 
 const About = () => {
   const values = [
@@ -40,22 +37,58 @@ const About = () => {
 
   const team = [
     {
-      name: 'Arun Krishnan',
-      role: 'Founder & CEO',
-      image: team1,
-      bio: 'With 25 years in real estate development, Arun founded KCN with a vision to transform how India builds and lives.',
+      name: 'Noufal K C',
+      role: 'CEO & Founder',
+      image: '/Team/Noufal K C.png',
+      phone: '+91 97477 70369',
     },
     {
-      name: 'Lakshmi Nair',
-      role: 'Chief Architect',
-      image: team2,
-      bio: 'A LEED-accredited professional, Lakshmi leads our design team in creating spaces that inspire and sustain.',
+      name: 'Fabi Fathima',
+      role: 'Managing Partner & Coordinator',
+      image: '/Team/Fabi Fathima.png',
+      phone: '+91 8589 928153',
     },
     {
-      name: 'Vikram Iyer',
-      role: 'Head of Sustainability',
-      image: team3,
-      bio: 'Vikram ensures every KCN project meets the highest standards of environmental performance.',
+      name: 'Anzil K K',
+      role: 'Interior Consultant',
+      image: '/Team/Anzil K K.png',
+      phone: '+91 8075108175',
+    },
+    {
+      name: 'Ahsan K',
+      role: 'Interior Consultant & Flooring Designer',
+      image: '/Team/Ahsan K.png',
+      phone: '+91 9995269615',
+    },
+    {
+      name: 'Abin Baiju',
+      role: 'Landscape Consultant',
+      image: '/Team/Abin Baiju.png',
+      phone: '+91 92077 86646',
+    },
+    {
+      name: 'Akash VB',
+      role: 'Civil Engineer',
+      image: '/Team/Akash VB.png',
+      phone: '+91 7561846123',
+    },
+    {
+      name: 'Shahila Muhammed',
+      role: 'Accountant',
+      image: '/Team/Shahila Muhammed.png',
+      phone: '+91 9061931171',
+    },
+    {
+      name: 'Janfishan',
+      role: 'Industrial Consultant',
+      image: '/Team/Janfishan.png',
+      phone: '+91 8921489425',
+    },
+    {
+      name: 'Jasna K',
+      role: 'Accountant',
+      image: '/Team/Jasna K.png',
+      phone: '+91 7025418403',
     },
   ];
 
@@ -167,7 +200,7 @@ const About = () => {
               Meet Our Team
             </h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {team.map((member, index) => (
               <div 
                 key={member.name}
@@ -185,9 +218,11 @@ const About = () => {
                   {member.name}
                 </h3>
                 <p className="text-gold font-medium mb-3">{member.role}</p>
-                <p className="text-muted-foreground text-sm max-w-xs mx-auto">
-                  {member.bio}
-                </p>
+                {member.phone && (
+                  <p className="text-muted-foreground text-sm">
+                    {member.phone}
+                  </p>
+                )}
               </div>
             ))}
           </div>

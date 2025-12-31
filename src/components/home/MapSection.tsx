@@ -74,10 +74,10 @@ const MapSection = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-2">Email</h3>
                   <a 
-                    href="mailto:info@kcnbuilders.com" 
+                    href="mailto:builderskcn@gmail.com" 
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    info@kcnbuilders.com
+                    builderskcn@gmail.com
                   </a>
                 </div>
               </div>
