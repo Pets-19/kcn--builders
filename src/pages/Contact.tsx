@@ -78,7 +78,7 @@ const Contact = () => {
                 <h2 className="text-2xl font-serif font-bold text-foreground mb-6">Contact Information</h2>
                 <div className="space-y-6">
                   {[
-                    { icon: MapPin, title: 'Head Office', text: 'KCN Tower, Sultan Bathery Road, Wayanad, Kerala 673592' },
+                    { icon: MapPin, title: 'Head Office', text: 'Mathilancheri Rd, Civil Station, Kairali Nagar, Kalpetta, Kerala 673122' },
                     { icon: Phone, title: 'Phone', text: '+91 97477 70369' },
                     { icon: Mail, title: 'Email', text: 'builderskcn@gmail.com' },
                     { icon: Clock, title: 'Working Hours', text: 'Mon - Sat: 9:00 AM - 6:00 PM' },

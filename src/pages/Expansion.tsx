@@ -253,7 +253,7 @@ const Expansion = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-forest text-primary-foreground">
+      <section className="py-24 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <Users className="w-16 h-16 mx-auto mb-6 text-gold" />
           <h2 className="text-3xl md:text-5xl font-bold mb-6">

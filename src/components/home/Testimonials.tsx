@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Star, Quote, ChevronLeft, ChevronRight, User } from 'lucide-react';
 
 const testimonials = [
   {
@@ -7,7 +7,6 @@ const testimonials = [
     name: 'Rajesh Menon',
     role: 'Business Owner',
     location: 'Mist Valley Residences, Wayanad',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face',
     rating: 5,
     text: 'Moving to KCN\'s Mist Valley was the best decision we made. The quality of construction, the attention to sustainability, and the serene environment have transformed our lives. Our energy bills are 40% lower than our previous home!',
   },
@@ -16,7 +15,6 @@ const testimonials = [
     name: 'Priya Sharma',
     role: 'IT Professional',
     location: 'Green Meadows Township',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face',
     rating: 5,
     text: 'The VR tour experience was incredible – I could visualize my home perfectly before it was built. The smart home features and the community amenities make everyday living a joy. Highly recommend!',
   },
@@ -25,7 +23,6 @@ const testimonials = [
     name: 'Dr. Anand Kumar',
     role: 'Surgeon',
     location: 'Horizon Hills',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face',
     rating: 5,
     text: 'After a hectic day at work, coming home to the tranquility of Horizon Hills is therapeutic. The infinity pool overlooking the mountains is my sanctuary. KCN truly understands luxury living.',
   },
@@ -34,7 +31,6 @@ const testimonials = [
     name: 'Meera Nair',
     role: 'Entrepreneur',
     location: 'Mist Valley Residences',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face',
     rating: 5,
     text: 'I was skeptical about buying property remotely, but the KCN app and their transparent process made it seamless. From booking to possession, every step was professional and hassle-free.',
   },
@@ -90,11 +86,9 @@ const Testimonials = () => {
 
             {/* Author */}
             <div className="flex flex-col items-center">
-              <img 
-                src={testimonials[activeIndex].image} 
-                alt={testimonials[activeIndex].name}
-                className="w-16 h-16 rounded-full object-cover mb-4 ring-4 ring-primary/20"
-              />
+              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 ring-4 ring-primary/20">
+                <User className="w-8 h-8 text-primary" />
+              </div>
               <h4 className="font-bold text-foreground text-lg">
                 {testimonials[activeIndex].name}
               </h4>
